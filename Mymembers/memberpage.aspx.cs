@@ -9,6 +9,8 @@ namespace Assignment4NEXT.Mymembers
 {
     public partial class memberpage : System.Web.UI.Page
     {
+        KarateDataContext dbcon;
+        string conn = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
