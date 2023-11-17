@@ -2,56 +2,56 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.875" name="Karate">
   <DataContextMoniker Name="/KarateDataContext" />
   <nestedChildShapes>
-    <classShape Id="81fe86a2-e3ee-42f6-833b-589903ece7c8" absoluteBounds="3.5, 2.5, 2, 1.5785953776041666">
+    <classShape Id="5ddfec3c-9898-4f53-be62-37fdc47e6625" absoluteBounds="3.5, 2.5, 2, 1.5785953776041666">
       <DataClassMoniker Name="/KarateDataContext/Instructor" />
       <nestedChildShapes>
-        <elementListCompartment Id="43c776f1-d6af-40eb-ac4c-cc9fbf30c1c0" absoluteBounds="3.515, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="527417d9-4893-41dd-b48d-29ab1b0b6f52" absoluteBounds="3.515, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="534fc30a-122a-4338-a6fc-2f190f2d3b26" absoluteBounds="6.25, 5.75, 2, 1.9631982421875005">
+    <classShape Id="b90261c0-a080-44ed-bd00-89cdd77d8980" absoluteBounds="6.25, 5.75, 2, 1.9631982421875005">
       <DataClassMoniker Name="/KarateDataContext/Section" />
       <nestedChildShapes>
-        <elementListCompartment Id="bee01aa9-e632-4281-9f27-1050099183dc" absoluteBounds="6.265, 6.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0751af9e-4ef3-4174-9536-8c8f55a5c5b4" absoluteBounds="6.265, 6.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="8bf44d54-afeb-491a-b6d2-faeed5cea768" absoluteBounds="3.5, 7.625, 2, 1.9631982421874996">
+    <classShape Id="5c5a8257-07ec-45dd-927d-3b3dd76af59f" absoluteBounds="3.5, 7.625, 2, 1.9631982421874996">
       <DataClassMoniker Name="/KarateDataContext/Member" />
       <nestedChildShapes>
-        <elementListCompartment Id="3a135c6f-fdbc-4e8d-8087-b83dca6e9a5e" absoluteBounds="3.515, 8.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="35614df7-addb-41a4-ba09-f32c77cab742" absoluteBounds="3.515, 8.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="48e72f84-8f62-4e5e-ab27-1f8cd08bdd4a" absoluteBounds="0.75, 3.875, 2, 1.5785953776041666">
+    <classShape Id="977959ab-de34-4020-914d-8e01d4857840" absoluteBounds="0.75, 3.875, 2, 1.5785953776041666">
       <DataClassMoniker Name="/KarateDataContext/NetUser" />
       <nestedChildShapes>
-        <elementListCompartment Id="8d9adfc9-54bc-49c8-b451-5c31eb13dad9" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d66eb967-b4d5-417f-8d23-9b979ad55261" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <associationConnector edgePoints="[(5.5 : 8.6506987421875); (7.25 : 8.6506987421875); (7.25 : 7.7131982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/KarateDataContext/Member/Member_Section" />
       <nodes>
-        <classShapeMoniker Id="8bf44d54-afeb-491a-b6d2-faeed5cea768" />
-        <classShapeMoniker Id="534fc30a-122a-4338-a6fc-2f190f2d3b26" />
+        <classShapeMoniker Id="5c5a8257-07ec-45dd-927d-3b3dd76af59f" />
+        <classShapeMoniker Id="b90261c0-a080-44ed-bd00-89cdd77d8980" />
       </nodes>
     </associationConnector>
     <associationConnector edgePoints="[(2.75 : 4.76609587760417); (4.5 : 4.76609587760417); (4.5 : 4.07859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/KarateDataContext/NetUser/NetUser_Instructor" />
       <nodes>
-        <classShapeMoniker Id="48e72f84-8f62-4e5e-ab27-1f8cd08bdd4a" />
-        <classShapeMoniker Id="81fe86a2-e3ee-42f6-833b-589903ece7c8" />
+        <classShapeMoniker Id="977959ab-de34-4020-914d-8e01d4857840" />
+        <classShapeMoniker Id="5ddfec3c-9898-4f53-be62-37fdc47e6625" />
       </nodes>
     </associationConnector>
     <associationConnector edgePoints="[(2.75 : 5.14109812760417); (7.25 : 5.14109812760417); (7.25 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/KarateDataContext/NetUser/NetUser_Section" />
       <nodes>
-        <classShapeMoniker Id="48e72f84-8f62-4e5e-ab27-1f8cd08bdd4a" />
-        <classShapeMoniker Id="534fc30a-122a-4338-a6fc-2f190f2d3b26" />
+        <classShapeMoniker Id="977959ab-de34-4020-914d-8e01d4857840" />
+        <classShapeMoniker Id="b90261c0-a080-44ed-bd00-89cdd77d8980" />
       </nodes>
     </associationConnector>
     <associationConnector edgePoints="[(1.75 : 5.45359537760417); (1.75 : 8.60659912109375); (3.5 : 8.60659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/KarateDataContext/NetUser/NetUser_Member" />
       <nodes>
-        <classShapeMoniker Id="48e72f84-8f62-4e5e-ab27-1f8cd08bdd4a" />
-        <classShapeMoniker Id="8bf44d54-afeb-491a-b6d2-faeed5cea768" />
+        <classShapeMoniker Id="977959ab-de34-4020-914d-8e01d4857840" />
+        <classShapeMoniker Id="5c5a8257-07ec-45dd-927d-3b3dd76af59f" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>
