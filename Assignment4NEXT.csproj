@@ -187,6 +187,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Instructors\instructorpage.aspx" />
+    <Content Include="logon.aspx" />
     <Content Include="Mymembers\memberpage.aspx" />
     <Content Include="obj\Debug\Assignment4NEXT.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Assignment4NEXT.dll" />
@@ -609,6 +610,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Karate.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="logon.aspx.cs">
+      <DependentUpon>logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logon.aspx.designer.cs">
+      <DependentUpon>logon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mymembers\memberpage.aspx.cs">
       <DependentUpon>memberpage.aspx</DependentUpon>
