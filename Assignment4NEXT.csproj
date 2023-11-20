@@ -104,6 +104,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\addInstructor.aspx" />
+    <Content Include="Admin\addMember.aspx" />
+    <Content Include="Admin\addSection.aspx" />
+    <Content Include="Admin\administration.aspx" />
     <Content Include="App_Data\KarateSchool.mdf" />
     <Content Include="App_Data\KarateSchool_log.ldf">
       <DependentUpon>KarateSchool.mdf</DependentUpon>
@@ -571,6 +575,34 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\addInstructor.aspx.cs">
+      <DependentUpon>addInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addInstructor.aspx.designer.cs">
+      <DependentUpon>addInstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\addMember.aspx.cs">
+      <DependentUpon>addMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addMember.aspx.designer.cs">
+      <DependentUpon>addMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\addSection.aspx.cs">
+      <DependentUpon>addSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addSection.aspx.designer.cs">
+      <DependentUpon>addSection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\administration.aspx.cs">
+      <DependentUpon>administration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\administration.aspx.designer.cs">
+      <DependentUpon>administration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
