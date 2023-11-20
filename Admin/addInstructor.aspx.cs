@@ -13,9 +13,40 @@ namespace Assignment4NEXT.Admin
     {
         string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Graci\\OneDrive\\Desktop\\CSCI 213\\Modual 4\\Assignment4\\NEW\\Assignment4NEXT\\App_Data\\KarateSchool.mdf\";Integrated Security=True;Connect Timeout=30;Encrypt=False";
 
-            protected void Page_Load(object sender, EventArgs e)
+        public void RefreshData()
         {
+            // KarateDataContext instance
+            KarateDataContext dataConnection = new KarateDataContext(connectionString);
+           // LINQ query
+            var updatedData = from item in dataConnection.Instructors
+                              orderby item.InstructorID
+                              select new
+                              {
+                                  InstructorID = item.InstructorID,
+                                  InstructorFirstName = item.InstructorFirstName,
+                                  InstructorLastName = item.InstructorLastName
+                              };
 
+            // Set GridViewView's DataSource propery to result of query and bind
+            GridView1.DataSource = updatedData;
+            GridView1.DataBind();
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            KarateDataContext dataConnection = new KarateDataContext(connectionString);
+            // LINQ query
+            var data = from item in dataConnection.Instructors
+                              orderby item.InstructorID
+                              select new
+                              {
+                                  InstructorID = item.InstructorID,
+                                  InstructorFirstName = item.InstructorFirstName,
+                                  InstructorLastName = item.InstructorLastName
+                              };
+
+            // Set GridViewView's DataSource propery to result of query and bind
+            GridView1.DataSource = data;
+            GridView1.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -52,6 +83,8 @@ namespace Assignment4NEXT.Admin
 
             // Submit changes to the database
             dataConnection.SubmitChanges();
+
+            RefreshData();
 
         }
     }

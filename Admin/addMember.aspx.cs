@@ -11,6 +11,27 @@ namespace Assignment4NEXT.Admin
     {
         string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Graci\\OneDrive\\Desktop\\CSCI 213\\Modual 4\\Assignment4\\NEW\\Assignment4NEXT\\App_Data\\KarateSchool.mdf\";Integrated Security=True;Connect Timeout=30;Encrypt=False";
 
+        public void RefreshData()
+        {
+            // KarateDataContext instance
+            KarateDataContext dataConnection = new KarateDataContext(connectionString);
+
+            var updated1 = from item in dataConnection.Members
+                           orderby item.Member_UserID
+                           select new
+                           {
+                               Member_UserID = item.Member_UserID,
+                               MemberFirstName = item.MemberFirstName,
+                               MemberLastName = item.MemberLastName,
+                               MemberPhoneNumber = item.MemberPhoneNumber,
+                               MemberDateJoined = item.MemberDateJoined
+                           };
+
+            // Set GridViewView's DataSource propery to result of query and bind
+            GridView1.DataSource = updated1;
+            GridView1.DataBind();
+
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -66,6 +87,8 @@ namespace Assignment4NEXT.Admin
 
             // Submit changes to the database
             dataConnection.SubmitChanges();
+
+            RefreshData();
         }
     }
 }
