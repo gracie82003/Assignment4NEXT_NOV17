@@ -16,13 +16,13 @@ namespace Assignment4NEXT.Admin
 
             KarateDataContext dataConnection = new KarateDataContext(connectionString);
 
-            var result2 = from item in dataConnection.Instructors
-                          orderby item.InstructorID
+            var result2 = from item in dataConnection.Members
+                          orderby item.Member_UserID
                           select new
                           {
-                              InstructorID = item.InstructorID,
-                              InstructorFirstName = item.InstructorFirstName,
-                              InstructorLastName = item.InstructorLastName
+                              Member_UserID = item.Member_UserID,
+                              MemberFirstName = item.MemberFirstName,
+                              MemberLastName = item.MemberLastName
                           };
 
             // Set AutoTypesLIST's DataSource propery to result of query and bind

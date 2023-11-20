@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="administration.aspx.cs" Inherits="Assignment4NEXT.Admin.administration" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
-        <br />
+        &nbsp;</p>
+    <p>
+        <strong><span class="text-decoration-underline">Members</span></strong><br />
         <asp:GridView ID="GridView1" runat="server" DataKeyNames="Member_UserID">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
@@ -9,6 +11,8 @@
         </asp:GridView>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
+    <p>
+        <strong><span class="text-decoration-underline">Instructors</span></strong></p>
     <p>
         <asp:GridView ID="GridView2" runat="server" DataKeyNames="InstructorID">
             <Columns>

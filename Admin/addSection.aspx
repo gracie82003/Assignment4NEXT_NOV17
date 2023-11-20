@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         <br />
-    </p>
+        <span class="text-decoration-underline"><strong>Select a Member:</strong></span></p>
     <p>
         <asp:GridView ID="GridView1" runat="server" DataKeyNames="Member_UserID">
             <Columns>
@@ -10,6 +10,8 @@
             </Columns>
         </asp:GridView>
     </p>
+    <p class="text-decoration-underline">
+        <strong>Select an Instructor:</strong></p>
     <p>
         <asp:GridView ID="GridView2" runat="server" DataKeyNames="InstructorID">
             <Columns>
@@ -18,11 +20,10 @@
         </asp:GridView>
     </p>
     <p>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;Section Name: <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section Start Date:
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section Fee<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
     </p>
     <p>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Assign to Section" />
