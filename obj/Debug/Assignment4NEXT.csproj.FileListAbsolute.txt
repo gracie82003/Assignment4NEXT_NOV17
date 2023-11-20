@@ -128,3 +128,11 @@ C:\Users\16123\Source\Repos\gracie82003\Assignment4NEXT_NOV17\obj\Debug\Assignme
 C:\Users\16123\Source\Repos\gracie82003\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.csproj.CopyComplete
 C:\Users\16123\Source\Repos\gracie82003\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.dll
 C:\Users\16123\Source\Repos\gracie82003\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.pdb
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\bin\Assignment4NEXT.dll.config
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\bin\Assignment4NEXT.dll
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\bin\Assignment4NEXT.pdb
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.csproj.AssemblyReference.cache
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.csproj.CoreCompileInputs.cache
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.csproj.CopyComplete
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.dll
+C:\Users\16123\Source\Repos\Assignment4NEXT_NOV17\obj\Debug\Assignment4NEXT.pdb
